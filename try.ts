@@ -18,3 +18,14 @@ const virus : any = "CorOna"
 
 console.log((<string>virus).toUpperCase())
 console.log((virus as string).toLocaleUpperCase())
+
+interface Node {
+    readonly val : number;
+    left? : Node;
+    right? : Node;
+    next? : Node;
+}
+
+interface BST {
+    root: Node;
+}
