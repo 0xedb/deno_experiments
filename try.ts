@@ -13,3 +13,8 @@ const names : Array<[string, number]> = [
 ]
 
 names.forEach(el => console.log(el[0]))
+
+const virus : any = "CorOna"
+
+console.log((<string>virus).toUpperCase())
+console.log((virus as string).toLocaleUpperCase())
