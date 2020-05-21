@@ -29,3 +29,8 @@ interface Node {
 interface BST {
     root: Node;
 }
+
+const u : Array<number> = [1, 2, 3, 5]
+const v : ReadonlyArray<string> = ["bruno", "edoh", "james", "jane", "jack"]
+u.push(100)
+console.log(v.some(el => el.length === 4))
