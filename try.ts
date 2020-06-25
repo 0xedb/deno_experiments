@@ -19,15 +19,15 @@ const virus : any = "CorOna"
 console.log((<string>virus).toUpperCase())
 console.log((virus as string).toLocaleUpperCase())
 
-interface Node {
+interface T_Node {
     readonly val : number;
-    left? : Node;
-    right? : Node;
-    next? : Node;
+    left? : T_Node;
+    right? : T_Node;
+    next? : T_Node;
 }
 
 interface BST {
-    root: Node;
+    root: T_Node;
 }
 
 const u : Array<number> = [1, 2, 3, 5]
@@ -40,3 +40,6 @@ type Options = "this" | "that" | "none"
 let mine : Options 
 mine = "none"
 console.log(mine)
+
+let com : T_Node & BST;
+com.val
